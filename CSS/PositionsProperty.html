@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positon Property</title>
+
+    <style>
+        h1{
+            background-color: violet;
+            border: 5px black solid;
+            border-radius: 30px;
+            padding: 5px;
+            padding-left: 180px;   
+        }
+        .container1{
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            height: 1000px;
+            background-color: beige;
+        }
+
+        /* Default Positon is in static mode. */
+        .img1{
+            position: sticky;
+        }
+        .img2{
+            position: fixed;
+        }
+        .img3{
+            position: relative;
+            right: 50px;
+        }
+        .img4{
+            position: sticky;
+        }
+        .img5{
+            position: absolute;
+        }
+        .img6{
+        }
+        .box{
+            height: 2000px;
+            background-color: aquamarine;
+        }
+        /* .vid{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            right: 20px;
+            bottom: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <h1><i>Hi. My name is Harjot Singh.</i></h1>
+    <div class="container1">
+        <img class="img1" src="/Web Dev/Images/nishawat.jpg" alt="NCT" width="200px" height="250px">
+
+        <img class="img2" src="/Web Dev/Images/dollar.jpg" width="200px" alt="abc" height="250px">
+
+        <img class="img3" src="/Web Dev/Images/dollarsign.jpg" width="200px" height="250px" alt="def">
+
+        <img class="img4" src="/Web Dev/Images/king.jpg" width="200px" height="250px" alt="ghi">
+
+        <img class="img5" src="/Web Dev/Images/SMW.jpg" width="200px" height="250px" alt="jkl">
+
+        <img class="img6" src="/Web Dev/Images/veerg.jpg" width="200px" height="250px" alt="mno">
+
+        <!-- <video class="vid" src="/Web Dev/Assets/videoplayback.mp4" width="300px" controls>Video</video> -->
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

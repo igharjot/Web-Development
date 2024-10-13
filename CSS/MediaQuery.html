@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Custom Variables</title>
+    <style>
+        *{
+            padding: 1px;
+            margin: 1px;
+        }
+
+        .pw{
+            height: 200px;
+            width: 400px;
+            color: white;
+            background-color: purple;
+            border: 1px solid black;
+        }
+
+        .container{
+            border: 1px solid black;
+            background-color:bisque;
+            height: 211px;
+            padding: 3px;
+            margin: 3px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: yellow;
+            
+        }
+        #box2{
+            background-color: yellowgreen;
+
+        }
+        #box3{
+            background-color: blue;
+
+        }
+        #box4{
+            background-color: orangered;
+
+        }
+
+        @media (min-width: 300px) and (max-width: 500px){
+            .pw{
+                background-color: brown;  /* 300px to 500px ke beech brown rhega, otherwise, purple rhega */
+            }
+        }
+        @media (min-width: 640px){
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media (max-width: 640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+        /* TEXT and Image Media Query */
+        .leftright{
+            border: 1px solid black;
+            background-color:bisque;
+            width: 450px;
+            padding: 2px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        #leftbox{
+            border: 1px solid black;
+            background-color: white;
+            width: 45%;
+            padding: 2px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #rightbox{
+            border: 1px solid black;
+            background-color: white;
+            width: 47%;
+            padding: 2px;
+            margin: 3px;
+        }
+        p{
+            border: 1px solid black;
+            background-color: aqua;
+            padding: 2px;
+            margin: 3px;
+        }
+        img{
+            width: 170px;
+        }
+        @media (max-width: 640px){
+            .leftright{
+                flex-direction: column;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="pw">
+        Hello Bachooooooooooooooo.
+    </div>
+
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div><br><hr><br>
+
+    <div class="leftright">
+        <div id="leftbox">
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div id="rightbox">
+            <img src="/Web-Dev/Images/imageFile.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

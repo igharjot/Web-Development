@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1480px;
+            height: 690px;
+            margin: 20px;
+            border: 5px solid orange;
+            background-color: black;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box1{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(57, 131, 228);
+            border: 2px solid whitesmoke;
+            position: relative;
+
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+
+            animation-timing-function: linear;
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out; */
+            animation-timing-function: cubic-bezier(0.92, -0.51, 0.14, 1.47);
+
+            animation-direction: alternate;
+            /* animation-direction: alternate-reverse;   */
+
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: backwards;
+            animation-fill-mode: none;
+            animation-fill-mode: both; */
+
+            animation-play-state: running;
+            /* animation-play-state: paused; */
+
+            /*                SHORT-HAND NOTATION             */
+            /* @keyframes | duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1260px;
+            }
+        }
+
+        .box2{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(57, 131, 228);
+            border: 2px solid whitesmoke;
+            position: relative;
+
+            animation: 5s linear 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from{
+                top: 620px;
+                left: 1060px;
+            }
+            to{
+                top: 620px;
+                left: -200px;
+            }  
+        }
+
+        .circle{
+            width: 75px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: rgb(248, 249, 251);
+            border: 5px solid rgb(185, 124, 26);
+            border-radius: 50px;
+            position: absolute;
+            margin: 5px;
+            top: 45%;
+            left: 48%;
+
+            animation: 10s alternate 0s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovemment {
+            0%{
+                
+            }
+            25%{
+                
+            }
+            50%{
+                
+            }
+            75%{
+
+            }
+            100%{
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box1">
+        </div>
+
+        <div class="box2">
+        </div>
+
+        <div class="circle">
+        </div>
+
+    </div>
+
+</body>
+</html>
