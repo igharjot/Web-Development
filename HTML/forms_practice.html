@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+<body>
+    <form1>
+        <U><h2>Event Registeration</h2></U>
+        <Label for="name">Name : </Label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email : </label><br>
+        <input type="text" name="email" id="email"><br><br>
+        <label for="phone">Phone : </label><br>
+        <input type="text" name="phone" id="phone"><br><br>
+        <label for="occupation">Occupation : </label><br>
+        <select name="occupation" id="occupation">
+            <option value="other">Other</option>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+        </select><br><br>
+        <label>Topics of Interest :</label><br>
+
+        <input type="checkbox" name="html" id="html">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" name="javascript" id="javascript">
+        <label for="javascript">JavaScript</label><br><br>
+
+        <label for="comments">Comments : </label><br>
+        <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Enter a comment here..."></textarea>
+    </form1>
+    <hr>
+    <form2>
+        <u><h2>JOB APPLICATION</h2></u>
+        <label for="name">Name :</label><br>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="text" name="email" id="email"><br><br>
+
+        <label for="phone">Phone :</label><br>
+        <input type="text" name="phone" id="phone"><br><br>
+
+        <label for="resume">Resume :</label><br>
+        <input type="file" name="resume" id="resume"><br><br>
+
+        <label for="exp">Experience(in years) :</label><br>
+        <input type="number" name="exp" id="exp" min="0" max="40"><br><br>
+
+        <fieldset>
+            <legend><b><u>Skills</u></b></legend>
+
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label><br>
+
+            <input type="checkbox" name="javascript" id="javascript">
+            <label for="javascript">JavaScript</label><br>
+        </fieldset><br>
+
+        <label for="education">Highest Education :</label><br>
+        <select name="education" id="education">
+            <option value="">Select</option>
+            <option value="High School">High School</option>
+            <option value="Associates's Degree">Associates's Degree</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+
+        <label>Availability :</label><br>
+        
+        <input type="radio" name="fulltime" id="fulltime">
+        <label for="fulltime">Full-time</label><br>
+
+        <input type="radio" name="parttime" id="parttime">
+        <label for="parttime">Part-time</label><br><br>
+
+        <label>Additional Comments :</label><br>
+        <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Enter a comment here..."></textarea><br><br>
+
+        <input type="submit" value="SUbmit Application">
+    </form2>
+</body>
+</html>

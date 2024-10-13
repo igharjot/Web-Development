@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><b><big>Forms Practice</big></b></legend>
+
+            <label for="email/username">Email ID or Username : </label>
+            <input type="text" id="email/username" placeholder="abc@example.com">
+            
+            <br/><br/>
+            
+            <label for="password">Password : </label>
+            <input type="password" id="password">
+            
+            <br/><br/>
+            
+            <input type="submit" value="Click Here">
+            <button>Submit</button><br><br>
+            
+            <Label for="gender">Gender : </Label>
+            
+            <SELEct name="gender" id="selector">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <optgroup label="LGBTQ+">
+                    <option value="lesbian">Lesbian</option>
+                    <option value="gay">Gay</option>
+                    <option value="trans">Transgender</option>
+                </optgroup>
+            </SELEct><hr>
+            
+            <input type="radio"><hr>
+            
+            <input type="checkbox"><hr>
+            
+            <label for="datepicker">Choose Date : </label>
+            <input type="date" id="datepicker"><hr>
+            
+            <textarea name="textarea1" id="textarea1" cols="50" rows="10" placeholder="Enter text here..."></textarea>
+    
+        </fieldset><br/>
+
+        <label for="textfield">Text Field :</label>
+        <input type="text" name="textfield" id="textfield"><br/><br/>
+
+        <label for="button">Button :</label>
+        <input type="submit" name="button" id="button" value="Subscribe"><br/><br/>    
+        
+        <fieldset>
+            <legend><b>Radio</b></legend>
+            <label for="radio1">Male</label>
+            <input type="radio" name="radio1" id="radio1" >
+            <label for="radio1">Female</label>
+            <input type="radio" name="radio1" id="radio1" >
+            <label for="radio1">Prefer not say</label>
+            <input type="radio" name="radio1" id="radio1" >
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>Checkbox</b></legend>
+            <label for="checkbox1">English</label>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox2">Hindi</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox3">Punjabi</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>File-Select</b></legend>
+            <label for="fileselect1">Upload :</label>
+            <input type="file" name="fileselect1" id="fileselect1">
+        </fieldset><br>
+
+
+    </form>    
+</body>
+</html>
