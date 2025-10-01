@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -84,7 +83,9 @@ img {
     font-size: 2rem;
     border-radius: 40px;
 }
+
 .msg-container :hover {
     border: 2px solid salmon;
     cursor: pointer;
 }
+
