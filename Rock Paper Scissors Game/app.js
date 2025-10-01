@@ -23,15 +23,12 @@ const playGame = (userChoice) => {
     else {
         let userWin = true;
         if (userChoice === "rock") {
-            // scissors or paper.
             userWin = compChoice === "paper" ? true : false;
         }
         else if (userChoice === "paper") {
-            // scissors or rock.
             userWin = compChoice === "scissors" ? true : false;
         }
         else {
-            // paper or rock.
             userWin = compChoice === "rock" ? true : false;
         }
         showWinner(userWin, userChoice, compChoice);
@@ -57,4 +54,5 @@ const genCompChoise = () => {
     const options = ["rock", "paper", "scissors"];
     let idx = Math.floor(Math.random() * 3);
     return options[idx];
+
 }
